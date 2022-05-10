@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(to right, #304352, #d7d2cc);
+}
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input {
+  height: 30px;
+  display: block;
+  margin: 10px;
+}
+
+.avatar-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+ 
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: resize;
+  
+}
+
+#avatar-right-arrow {
+  font-size: 40px;
+}
+
+#avatar-left-arrow {
+  font-size: 40px;
+}

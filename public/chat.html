@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ab8cf15cd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contacts">
+        <h1 style="font-family: sans-serif" id="online-header">Online</h1>
+        <ul class="online-user-list"></ul>
+      </div>
+      <div class="chat">
+        <div class="chat-header">
+          <h1>Chat</h1>
+        </div>
+        <ul class="chat-area">
+          <li class="msg-sender">hello</li>
+          <li class="msg-receiver">hi</li>
+        </ul>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Type a message..."
+          />
+
+          <i class="fas fa-paper-plane" id="msg-btn"></i>
+        </div>
+      </div>
+      <div class="profile"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="chat.js"></script>
+  </body>
+</html>

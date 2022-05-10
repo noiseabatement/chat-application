@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat</title>
+    <link rel="stylesheet" href="welcome.css" />
+    <script
+      src="https://kit.fontawesome.com/ab8cf15cd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
   </head>
   <body>
-    <div class="nickname-container">
-      <input type="text" id="nickname" placeholder="Enter your nickname" />
-      <button id="nick-btn">Set</button>
+    <div class="welcome-page">
+      <h2>Cihan'ın mekanına hoş geldiniz</h2>
+      <input type="text" placeholder="Enter Name..." id="name-input" />
+      <button type="button" id="sign-up-btn">Register</button>
+      <p class="avatar-select-text" style="font-size: 26px;">Choose your avatar.</p>
+      <div class="avatar-container">
+        <div class="avatar-left-arrow">
+          <i class="fa-solid fa-chevron-left" id="avatar-left-arrow"></i>
+        </div>
+        <div class="avatar">
+          <img src="demon.png" id="avatar-img" alt="avatar" />
+        </div>
+        <div class="avatar-right-arrow">
+          <i class="fa-solid fa-chevron-right" id="avatar-right-arrow"></i>
+        </div>
+      </div>
     </div>
-    <div class="message-container">
-      <input type="text" id="chat-input" />
-      <button id="msg-btn">Send</button>
-      <ul id="events"></ul>
-    </div>
-
     <script src="/socket.io/socket.io.js"></script>
-    <script src="chat.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
